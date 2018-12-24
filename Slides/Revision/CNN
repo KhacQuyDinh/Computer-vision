@@ -1,0 +1,19 @@
+CNN was inspired by the visual cortex. Every time we see something, a series of layers of neurons gets activated, and each layer will detect a set of features such as lines, edges.
+
+A part of the image is connected to the next Conv layer because if all the pixels of the input is connected to the Conv layer, It will be too computationally expensive.
+
+Filter, Kernel, or Feature Detector is a small matrix used for features detection. A typical filter on the first layer of a ConvNet might have a size [5x5x3].
+
+Convolved Feature, Activation Map or Feature Map is the output volume formed by sliding the filter over the image and computing the dot product.
+
+Receptive field is a local region of the input volume that has the same size as the filter.
+
+Depth is the number of filters.
+
+Depth column (or fibre) is the set of neurons that are all pointing to the same receptive field.
+
+Stride has the objective of producing smaller output volumes spatially. For example, if a stride=2, the filter will shift by the amount of 2 pixels as it convolves around the input volume. Normally, we set the stride in a way that the output volume is an integer and not a fraction. Common stride: 1 or 2 (Smaller strides work better in practice), uncommon stride: 3 or more.
+
+Zero-padding adds zeros around the outside of the input volume so that the convolutions end up with the same number of outputs as inputs. If we don’t use padding the information at the borders will be lost after each Conv layer, which will reduce the size of the volumes as well as the performance.
+
+Weight share = A filter

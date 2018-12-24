@@ -1,0 +1,7 @@
+L0 Corresponds to the total number of nonzero elements in a vector
+
+L1 Norm Also known as Manhattan Distance or Taxicab norm the L1 norm is the distance you have to travel between the origin (0,0) to the destination (3,4), in a way that resembles how a taxicab drives between city blocks to arrive at its destination.
+
+L2 norm is the shortest distance to go from one point to another. It is that each component of the vector is squared, and that means that the outliers have more weighting, so it can skew results.
+
+L-infinity norm Gives the largest magnitude among each element of a vector. Having the vector X= [-6, 4, 2], the L-infinity norm is 6, by minimizing L-infinity norm we are reducing the cost of the most expensive building.
